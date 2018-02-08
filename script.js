@@ -9,7 +9,8 @@ $(document).ready(function(){
     
     var rss = stone + timber + ore;
     
-    var res = might/5e6 + kills/1e6 + rss/25e6 + Math.max(0,(helps-5000)/5000);
+    //var res = might/5e6 + kills/1e6 + rss/25e6 + Math.max(0,(helps-5000)/5000);
+    var res = might/5e6 + kills/1e6 + rss/25e6 + helps/10e3;
     
     res = parseFloat(Math.round(res * 100) / 100).toFixed(2);
     
